@@ -1,0 +1,170 @@
+*{
+    font-family: 'montserrat';
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-caption{
+    margin-bottom: 150px;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 100px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.services .card-body i{
+    font-size: 50px;
+}
+
+.team .card-body i{
+    font-size: 22px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, .15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, .15);
+}
+
+/* Hover parts */
+
+.services .card:hover{
+    transform: scale(1.1);
+}
+.portfolio .card:hover{
+    transform: scale(0.9);
+}
+.team .card:hover{
+    transform: scale(1.1);
+}
+.team .card i:hover{
+    background: rgb(163, 211, 66);
+    mix-blend-mode: exclusion;
+    border-radius: 5px;
+}
+
+#nav{
+    background-color: lightcyan;
+}
+
+/* nav > a :hover */
+#navbarSupportedContent a:hover{
+    color: darkorange;
+}
+#navbarSupportedContent a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #2bd576;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+#navbarSupportedContent a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+/* ***responsive CSS*** */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 30px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 20px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.3;
+		font-size: 18px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
